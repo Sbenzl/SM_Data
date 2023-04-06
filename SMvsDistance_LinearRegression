@@ -9,7 +9,7 @@ column_subset = [
     "Date",
     "Distance",
     "Moisture"]
-df = pd.read_csv(r"C:\Users\Sbens\OneDrive\Documents\Book1.csv", usecols=column_subset, nrows=324)
+df = pd.read_csv(r"C:/Users/skyebensel/.spyder-py3/Field_Hydrology/SM_Distance.csv", usecols=column_subset, nrows=324)
 # Normalize data
 
 # drop all rows that have NaN/None values
@@ -38,7 +38,7 @@ plt.xticks([i/2 for i in range(0, 15)])
 
 plt.xlim(-0.005, 1.6)
 plt.ylim(0, 50)
-plt.xlabel('Distance from Sagebrush')
+plt.xlabel('Distance from Sagebrush (m)')
 plt.ylabel('Soil Moisture (%)')
 plt.title('Linear Regression')
 
